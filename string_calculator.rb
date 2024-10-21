@@ -5,5 +5,8 @@ class StringCalculator
     return 0 if numbers.empty?
 
     return numbers.to_i if numbers.length == 1
+
+    # Handle comma seperated numbers
+    numbers.split(',').map(&:to_i).sum
   end
 end
