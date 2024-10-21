@@ -6,4 +6,5 @@ This project provides a simple implementation of a **String Calculator** in Ruby
 ## Installation
 
 1. Ensure that **Ruby** is installed on your system. You can verify by running:
+   ```bash
    ruby -v
