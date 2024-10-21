@@ -6,6 +6,9 @@ class StringCalculator
 
     return numbers.to_i if numbers.length == 1
 
+    # Replace '\n' with ','
+    numbers.gsub!("\n", ',')
+
     # Handle comma seperated numbers
     numbers.split(',').map(&:to_i).sum
   end
