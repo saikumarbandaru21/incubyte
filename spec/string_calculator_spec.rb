@@ -28,5 +28,10 @@ RSpec.describe StringCalculator do
     it 'handles new lines between numbers' do
       expect(calculator.add("2\n3,4")).to eq(9)
     end
+
+    # Test to verify support for different delimiters
+    it 'supports different delimiters' do
+      expect(calculator.add("//;\n1;2")).to eq(3)
+    end
   end
 end
